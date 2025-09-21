@@ -1,6 +1,6 @@
 ### **Dil Asistanı Uygulaması**
 
-Yapay zeka dil asistanı uygulamamız, **"Pupilica Yapay Zeka Hackathon"**'u için **Filiz Buzkıran, Göknil Bilge** ve **Ada Erkan** tarafından geliştirilmiştir.
+Yapay zeka dil asistanı uygulamamız, **Pupilica Yapay Zeka Hackathon**'u için  Filiz **Buzkıran** (@lizlavigne) , **Göknil Bilge** (@GoknilBilge) ve **Ada Erkan** (@adaerkn) tarafından geliştirilmiştir. 
 
 Bu uygulama, dil öğrenimini interaktif ve eğlenceli hale getiren bir Streamlit arayüzüdür. Kullanıcıların İngilizce kelime bilgisini geliştirmesine ve yazdıkları cümlelerdeki dil bilgisi ve yazım hatalarını kontrol etmesine yardımcı olur.
 
