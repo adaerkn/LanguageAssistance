@@ -1,14 +1,14 @@
 import re
 from transformers import pipeline
 
-# Düzeltme modelini bir kez yükle
+# Düzeltme modelinin yüklenmesi *
 grammar_corrector = pipeline(
     "text2text-generation",
     model="prithivida/grammar_error_correcter_v1",
     tokenizer="prithivida/grammar_error_correcter_v1"
 )
 
-# Yaygın mantıksal ve yazım hataları için manuel düzeltme haritası
+
 COMMON_TYPOS = {
     "bug": "big",
     "yu": "you",
@@ -23,13 +23,13 @@ def get_corrected_sentence(user_sentence: str) -> str:
     Kullanıcının cümlesini dil bilgisi ve yazım açısından düzeltir.
     """
     try:
-        # Önce manuel düzeltmeleri uygula
+        
         for wrong, correct in COMMON_TYPOS.items():
             if wrong in user_sentence.lower():
-                # Düzeltmeyi büyük/küçük harf duyarlılığı olmadan yap
+              
                 user_sentence = re.sub(re.escape(wrong), correct, user_sentence, flags=re.IGNORECASE)
 
-        # Cümlenin sonuna bir nokta eklemek, modelin daha iyi çalışmasını sağlar.
+      
         if not user_sentence.strip().endswith('.'):
             user_sentence += '.'
 
@@ -39,9 +39,9 @@ def get_corrected_sentence(user_sentence: str) -> str:
             clean_up_tokenization_spaces=True
         )[0]["generated_text"].strip()
 
-        # Gereksiz tekrarları ve anlamsız çıktıları temizle
+        
         if len(corrected.split()) > len(user_sentence.split()) * 2:
-            return user_sentence  # Düzeltme anlamsızsa orijinalini geri ver.
+            return user_sentence  
 
         return corrected
     except Exception as e:
@@ -55,7 +55,7 @@ def get_correction_details(original: str, corrected: str) -> list:
     """
     details = []
 
-    # Noktalama işaretlerini ve birden fazla boşluğu temizle
+    
     original_clean = re.sub(r'[,.?!]', '', original).lower().split()
     corrected_clean = re.sub(r'[,.?!]', '', corrected).lower().split()
 
@@ -64,7 +64,7 @@ def get_correction_details(original: str, corrected: str) -> list:
         corr_word = corrected_clean[i]
 
         if orig_word != corr_word:
-            # Yaygın yazım hataları için özel kontrol
+            
             if len(orig_word) == len(corr_word) and sum(1 for a, b in zip(orig_word, corr_word) if a != b) <= 1:
                 details.append(f"Yazım hatası: '{orig_word}' yerine '{corr_word}' demek mi istediniz?")
             else:
@@ -73,7 +73,6 @@ def get_correction_details(original: str, corrected: str) -> list:
     return details
 
 
-# Sadece kelime listesi için bu değişkeni yeni dosyaya taşıdım
 VOCAB = [
     {"word": "merhaba", "meaning": "hello, hi", "examples": ["Merhaba! Nasılsın?", "Merhaba, adın ne?"]},
     {"word": "kitap", "meaning": "book", "examples": ["Bu kitap çok ilginç.", "Okumak için bir kitap aldım."]},
