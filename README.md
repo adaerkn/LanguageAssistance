@@ -1,0 +1,50 @@
+### **Dil Asistanı Uygulaması**
+
+Yapay zeka dil asistanı uygulamamız, **"Pupilica Yapay Zeka Hackathon"**'u için **Filiz Buzkıran, Göknil Bilge** ve **Ada Erkan** tarafından geliştirilmiştir.
+
+Bu uygulama, dil öğrenimini interaktif ve eğlenceli hale getiren bir Streamlit arayüzüdür. Kullanıcıların İngilizce kelime bilgisini geliştirmesine ve yazdıkları cümlelerdeki dil bilgisi ve yazım hatalarını kontrol etmesine yardımcı olur.
+
+### **Ana Özellikler**
+
+* **Günlük Kelime Pratiği:** Rastgele seçilen bir kelime ve anlamı ile kullanıcıya örnek cümleler sunar.
+* **Akıllı Cümle Kontrolü:** Kullanıcının yazdığı cümledeki yazım ve dil bilgisi hatalarını akıllı bir yapay zeka modeliyle (Hugging Face `prithivida/grammar_error_correcter_v1`) düzeltir.
+* **Ayrıntılı Düzeltme Raporu:** Düzeltilen cümledeki hataları ayrıntılı olarak gösterir.
+* **Mini Quiz:** Öğrenilen kelimenin anlamını testini sunar.
+* **Profil Yönetimi:** Kullanıcılar dil, seviye ve hedeflerini kaydedebilir.
+
+---
+
+### **Kurulum ve Kullanım**
+
+Uygulamayı yerel bilgisayarınızda kurmak ve çalıştırmak için aşağıdaki adımları sırasıyla izleyin.
+
+#### **1. Depoyu Klonlayın**
+
+Uygulamanın tüm dosyalarını bilgisayarınıza indirmek için terminalinizde aşağıdaki komutu çalıştırın:
+
+```bash
+git clone [https://github.com/adaerkn/Language_Assistance.git](https://github.com/adaerkn/Language_Assistance.git)
+```
+#### **2. Proje Klasörüne Gidin**
+
+```bash
+cd Language_Assistance
+```
+#### **3. Gerekli Kütüphane kurulumu**
+Bu uygulamamızın ihtiyacı olan kütüphaneleri yüklediğimiz requirements.txt dosyamızdaki kütüphaneleri otomatik olarak kurcakatır.
+
+```bash
+pip install -r requirements.txt
+```
+
+#### **4. Uygulamayı Başlatın**
+Streamlit arayüzü ile birleştirdiğimiz uygulamamız bu komut yarıdımyla açılacaktır. 
+
+```bash
+streamlit run arayuz.py
+```
+
+
+
+
+
