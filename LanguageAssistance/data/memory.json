@@ -1,0 +1,47 @@
+{
+  "merhaba": {
+    "word": "merhaba",
+    "first_seen": "2025-09-15",
+    "repetitions": 0,
+    "interval": 0,
+    "easiness": 2.5,
+    "last_review": null,
+    "next_review": "2025-09-15"
+  },
+  "kitap": {
+    "word": "kitap",
+    "first_seen": "2025-09-15",
+    "repetitions": 0,
+    "interval": 0,
+    "easiness": 2.5,
+    "last_review": null,
+    "next_review": "2025-09-15"
+  },
+  "ev": {
+    "word": "ev",
+    "first_seen": "2025-09-15",
+    "repetitions": 0,
+    "interval": 0,
+    "easiness": 2.5,
+    "last_review": null,
+    "next_review": "2025-09-15"
+  },
+  "yemek": {
+    "word": "yemek",
+    "first_seen": "2025-09-15",
+    "repetitions": 0,
+    "interval": 0,
+    "easiness": 2.5,
+    "last_review": null,
+    "next_review": "2025-09-15"
+  },
+  "arkadaş": {
+    "word": "arkadaş",
+    "first_seen": "2025-09-15",
+    "repetitions": 0,
+    "interval": 0,
+    "easiness": 2.5,
+    "last_review": null,
+    "next_review": "2025-09-15"
+  }
+}

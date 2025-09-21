@@ -1,0 +1,9 @@
+transformers>=4.30.0
+torch>=2.0.0
+datasets
+sentencepiece
+scikit-learn
+streamlit
+accelerate
+hf_xet
+beautifulsoup4
