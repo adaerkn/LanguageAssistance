@@ -9,7 +9,7 @@ Bu uygulama, dil öğrenimini interaktif ve eğlenceli hale getiren bir Streamli
 * **Günlük Kelime Pratiği:** Rastgele seçilen bir kelime ve anlamı ile kullanıcıya örnek cümleler sunar.
 * **Akıllı Cümle Kontrolü:** Kullanıcının yazdığı cümledeki yazım ve dil bilgisi hatalarını akıllı bir yapay zeka modeliyle (Hugging Face `prithivida/grammar_error_correcter_v1`) düzeltir.
 * **Ayrıntılı Düzeltme Raporu:** Düzeltilen cümledeki hataları ayrıntılı olarak gösterir.
-* **Mini Quiz:** Öğrenilen kelimenin anlamını testini sunar.
+* **Mini Quiz:** Öğrenilen kelimenin anlam testini sunar.
 * **Profil Yönetimi:** Kullanıcılar dil, seviye ve hedeflerini kaydedebilir.
 
 ---
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ```
 
 #### **4. Uygulamayı Başlatın**
-Streamlit arayüzü ile birleştirdiğimiz uygulamamız bu komut yarıdımyla açılacaktır. 
+Streamlit arayüzü ile birleştirdiğimiz uygulamamız bu komut yarıdımıyla açılacaktır. 
 
 ```bash
 streamlit run arayuz.py
