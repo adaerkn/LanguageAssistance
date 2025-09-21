@@ -1,7 +1,7 @@
 import os
 import warnings
 
-# Bu ayarlar, program başladığı anda tüm uyarıları gizler.
+
 warnings.filterwarnings("ignore")
 os.environ['TRANSFORMERS_VERBOSITY'] = 'error'
 
