@@ -4,6 +4,14 @@ Yapay zeka destekli dil asistanı uygulamamız, **Pupilica Yapay Zeka Hackathon*
 
 Bu uygulama, dil öğrenimini interaktif ve eğlenceli hale getiren bir Streamlit arayüzüdür. Kullanıcıların İngilizce kelime bilgisini geliştirmesine ve yazdıkları cümlelerdeki dil bilgisi ve yazım hatalarını kontrol etmesine yardımcı olur.
 
+
+### **Uygulamayı Canlı Deneyin!**
+
+Uygulamayı indirmeden doğrudan tarayıcınızda denemek için aşağıdaki bağlantıyı ziyaret edebilirsiniz:
+
+👉 **[Uygulamaya Gitmek İçin Tıklayın](https://languageassistance.streamlit.app/)**
+
+
 ### **Ana Özellikler**
 
 * **Günlük Kelime Pratiği:** Rastgele seçilen bir kelime ve anlamı ile kullanıcıya örnek cümleler sunar.
@@ -31,7 +39,7 @@ git clone [https://github.com/adaerkn/Language_Assistance.git](https://github.co
 cd Language_Assistance
 ```
 #### **3. Gerekli Kütüphane kurulumu**
-Bu uygulamamızın ihtiyacı olan kütüphaneleri yüklediğimiz requirements.txt dosyamızdaki kütüphaneleri otomatik olarak kurcakatır.
+Bu uygulamamızın ihtiyacı olan kütüphaneleri yüklenilen requirements.txt dosyamızdan kütüphaneleri otomatik olarak indirecektir.
 
 ```bash
 pip install -r requirements.txt
