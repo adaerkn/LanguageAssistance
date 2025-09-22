@@ -5,7 +5,7 @@ Yapay zeka destekli dil asistanı uygulamamız, **Pupilica Yapay Zeka Hackathon*
 Bu uygulama, dil öğrenimini interaktif ve eğlenceli hale getiren bir Streamlit arayüzüdür. Kullanıcıların İngilizce kelime bilgisini geliştirmesine ve yazdıkları cümlelerdeki dil bilgisi ve yazım hatalarını kontrol etmesine yardımcı olur.
 
 
-### **Uygulamayı Canlı Deneyin!**
+### **Uygulamanın Canlı Deneyimi**
 
 Uygulamayı indirmeden doğrudan tarayıcınızda denemek için aşağıdaki bağlantıyı ziyaret edebilirsiniz:
 
